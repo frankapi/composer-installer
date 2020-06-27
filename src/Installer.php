@@ -20,7 +20,6 @@ class Installer extends LibraryInstaller
 
     $packageTypesFolderMap = $this->packageTypesFolderMap();
     if ($packageTypesFolderMap[$type]) {
-      var_dump($package->getPrettyName());
       return $packageTypesFolderMap[$type] .'/'. $package->getPrettyName();
     }
 
